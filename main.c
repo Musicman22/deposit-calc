@@ -7,27 +7,31 @@ int main() {
 	printf ("Enter your income and data: ");
 	scanf ("%d""%d", &income, &data);
 
-	if (income <= 100000) {
-		if (data <= 30) {
-			sum = income - income / 10;
-		} else if (data <= 120) {
-			sum = income + income * 2 / 100;
-		} else if (data <= 240) {
-			sum = income + income * 6 / 100;
-		} else {
-			sum = income + income * 12 / 100;
-		}
+	if (income < 10000 || (data < 0 || data > 365)) {
+		printf ("Entered information is incorrect. Minimal income value is 10000,\ndeposit data shouldn't be more than 365 days.\n");
 	} else {
-		if (data <= 30) {
-			sum = income - income / 10;
-		} else if (data <= 120) {
-			sum = income + income * 3 / 100;
-		} else if (data <= 240) {
-			sum = income + income * 8 / 100;
+		if (income <= 100000) {
+			if (data <= 30) {
+				sum = income - income / 10;
+			} else if (data <= 120) {
+				sum = income + income * 2 / 100;
+			} else if (data <= 240) {
+				sum = income + income * 6 / 100;
+			} else {
+				sum = income + income * 12 / 100;
+			}
 		} else {
-			sum = income + income * 15 / 100;
+			if (data <= 30) {
+				sum = income - income / 10;
+			} else if (data <= 120) {
+				sum = income + income * 3 / 100;
+			} else if (data <= 240) {
+				sum = income + income * 8 / 100;
+			} else {
+				sum = income + income * 15 / 100;
+			}
 		}
+		printf ("Your deposit is: %d\n", sum);
 	}
-	printf ("Your deposit is: %d\n", sum);
 	return 0;
 }
