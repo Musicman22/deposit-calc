@@ -2,3 +2,6 @@
 *.jpg
 *.gtp
 *.mp3
+*.main.c.swp
+*main.c~
+*#main.c#
