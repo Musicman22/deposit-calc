@@ -1,2 +1,1 @@
-# deposit-calc (test)
-2 variant
+https://travis-ci.org/Musicman22/deposit-calc.svg?branch=master
