@@ -1,2 +1,2 @@
-# deposit-calc
+# deposit-calc (test)
 2 variant
